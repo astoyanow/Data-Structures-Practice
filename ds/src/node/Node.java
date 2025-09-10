@@ -41,6 +41,10 @@ public class Node {
 		this.neighbors = neighbors;
 	}
 	
+	public boolean hasNeighbors() {
+		return this.neighbors.size() > 0;
+	}
+	
 	/**
 	 * Representation of Nodes in a LinkedList
 	 * 
