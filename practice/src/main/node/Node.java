@@ -13,8 +13,25 @@ public class Node {
 	private int value;
 	private String name;
 	private List<Node> neighbors;
+	private int x;
+	private int y;
+	
+	public Node(Node head, Node tail, int value, String name, List<Node> neighbors) {
+		this.head = head;
+		this.tail = tail;
+		this.value = value;
+		this.name = name;
+		this.neighbors = neighbors;
+	}
+	
+	public Node(int x, int y, int value) {
+		this.x = x;
+		this.y = y;
+		this.value = value;
+	}
 	
 	public Node() {
+		
 	}
 	
 	public int getValue() {
@@ -43,6 +60,22 @@ public class Node {
 	
 	public boolean hasNeighbors() {
 		return this.neighbors.size() > 0;
+	}
+	
+	public int getX() {
+		return this.x;
+	}
+	
+	public void setX(int x) {
+		this.x = x;
+	}
+	
+	public int getY() {
+		return this.y;
+	}
+	
+	public void setY(int y) {
+		this.y = y;
 	}
 	
 	/**
